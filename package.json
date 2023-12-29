@@ -11,7 +11,8 @@
     "typecheck": "tsc",
     "drizzle:migrate": "tsx drizzle/migrate",
     "drizzle:generate": "drizzle-kit generate:sqlite --out ./drizzle/migrations --breakpoints --schema=./drizzle/schema.ts",
-    "drizzle:generate:orgs": "drizzle-kit generate:sqlite --out ./drizzle/migrations-orgs --breakpoints --schema=./drizzle/org-schema.ts"
+    "drizzle:generate:orgs": "drizzle-kit generate:sqlite --out ./drizzle/migrations-orgs --breakpoints --schema=./drizzle/org-schema.ts",
+    "drizzle:studio": "drizzle-kit studio --port 3333"
   },
   "dependencies": {
     "@libsql/client": "0.4.0-pre.5",
